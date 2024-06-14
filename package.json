@@ -1,0 +1,21 @@
+{
+  "name": "test-multi-extension-debug",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/sijumoncy/multi-extension-development-test.git",
+  "author": "sijumoncy <72241997+sijumoncy@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch:headless-audio-api": "cd headless-audio-api && npm run watch",
+    "watch:api-consumer-ext": "cd api-consumer-ext && npm run watch",
+    "build:headless-audio-api": "cd headless-audio-api && npm run build",
+    "build:api-consumer-ext": "cd api-consumer-ext && npm run build",
+    "compile:headless-audio-api": "cd headless-audio-api && npm run compile",
+    "compile:api-consumer-ext": "cd api-consumer-ext && npm run compile",
+    "watch": "npm-run-all --parallel watch:*",
+    "compile": "npm-run-all --parallel compile:*"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

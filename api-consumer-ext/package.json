@@ -19,6 +19,10 @@
       {
         "command": "api-consumer-ext.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "api-consumer-ext.triggerapi",
+        "title": "Trigger API"
       }
     ]
   },
